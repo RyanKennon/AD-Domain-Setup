@@ -14,6 +14,7 @@ The goal is to demonstrate foundational identity, authentication, and domain man
 - Microsoft Azure
 - Azure Virtual Network
 - Remote Desktop Protocol (RDP)
+- Active Directory Domain Services (AD DS)
 - PowerShell
 
 ---
@@ -30,8 +31,63 @@ The goal is to demonstrate foundational identity, authentication, and domain man
 
 ## Step-by-Step Summary
 
-## 1. Create Azure Virtual Machines
-
-Create two Azure virtual machines
+## 1) Create Azure Virtual Machines
 
 ### Domain Controller (DC)
+- Image: Windows Server 2022 Datacenter
+- Size: Minimum 2 vcpus
+
+### Client Machine
+- Image: Windows 10 Pro
+- Make sure that the DC and Client are on the same subnet
+
+---
+
+## 2) Make the DC's IP address Static
+
+1. Select **domain controller**
+2. Select **Network Settings**
+3. Open **Network Interface**
+4. Select ipconfig1
+5. For Private IP address setting choose **Static**
+6. Save
+
+---
+
+## 3) Assign the Client the same private IP address as the DC
+
+1. Select **Client virtual machine**
+2. Select **Network Settings**
+3. Open **Network Interface**
+4. Select **DNS Servers**
+5. Choose **Custom**
+6. Enter the **DC's Private IP address**
+7. Save
+
+---
+
+## 4) Install Active Directory Domain Services
+
+1. Log into the **Domain Controller**
+2. Open **Server Manager**
+3. Select **Add roles and features**
+4. On the **Server Roles** tab check **Active Directory Domain Services**
+5. Complete the installation
+
+---
+
+## 5) Promote Server to Domain Controller
+
+1. In **Server Manager**, click the notification flag
+2. Select **Promote this server to a domain controller**
+3. Choose **Add a new forest**
+4. Set the root domain name
+5. Set the Directory Services Restore Mode (DSRM) password
+6. Complete the wizard and reboot the server
+
+---
+
+## 6) Join the Client to the Domain
+
+1. Log into the Client as your orignal local admin
+2. 

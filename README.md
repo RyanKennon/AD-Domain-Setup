@@ -9,3 +9,29 @@ The goal is to demonstrate foundational identity, authentication, and domain man
 
 ---
 
+## Environments and Technologies Used
+
+- Microsoft Azure
+- Azure Virtual Network
+- Remote Desktop Protocol (RDP)
+- PowerShell
+
+---
+
+## Lab Objective
+
+- Deploy A Windows Server domain controller in Azure
+- Install and configure Active Directory Domain Services
+- Create and configure an Active Directory forest
+- Join a Windows client to the domain
+- Validate authentication and directory functionality
+
+---
+
+## Step-by-Step Summary
+
+## 1. Create Azure Virtual Machines
+
+Create two Azure virtual machines
+
+### Domain Controller (DC)

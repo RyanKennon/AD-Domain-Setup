@@ -31,6 +31,8 @@ The goal is to demonstrate foundational identity, authentication, and domain man
 
 ## Step-by-Step Summary
 
+---
+
 ## 1) Create Azure Virtual Machines
 
 ### Domain Controller (DC)
@@ -39,7 +41,7 @@ The goal is to demonstrate foundational identity, authentication, and domain man
 
 ### Client Machine
 - Image: Windows 10 Pro
-- Make sure that the DC and Client are on the same subnet
+- **Make sure that the DC and Client are on the same subnet**
 
 ---
 
@@ -54,7 +56,7 @@ The goal is to demonstrate foundational identity, authentication, and domain man
 
 ---
 
-## 3) Assign the Client the same private IP address as the DC
+## 3) Attatch the Client VM to the DC
 
 1. Select **Client virtual machine**
 2. Select **Network Settings**
@@ -87,7 +89,9 @@ The goal is to demonstrate foundational identity, authentication, and domain man
 
 ---
 
-## 6) Join the Client to the Domain
+## 6) Verify Domain Functionality
 
 1. Log into the Client as your orignal local admin
-2. 
+2. Open **PowerShell**
+3. Attempt to ping the DC's private IP address
+4. 

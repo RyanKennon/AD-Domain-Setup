@@ -2,7 +2,7 @@
   <img src="https://github.com/user-attachments/assets/7b65e021-0e08-42ae-8da2-f57cd11aceb7" width="300" height="168" alt="image" />
 </p>
 
-# Configuring On-Premises Active Directory within Azure VMs
+# Active Directory Domain Setup
 
 This project documents the deployment of a traditional **on-premises Active Directory environment** hosted within **Microsoft Azure Virtual Machines**.
 The goal is to demonstrate foundational identity, authentication, and domain management concepts using cloud-based infrastructure while preserving classic on-prem AD architecture.
@@ -14,14 +14,14 @@ The goal is to demonstrate foundational identity, authentication, and domain man
 - Microsoft Azure
 - Azure Virtual Network
 - Remote Desktop Protocol (RDP)
-- Active Directory Domain Services (AD DS)
+- Active Directory Domain Servies (AD DS)
 - PowerShell
 
 ---
 
 ## Lab Objective
 
-- Deploy A Windows Server domain controller in Azure
+- Deploy a Windows Server domain controller in Azure
 - Install and configure Active Directory Domain Services
 - Create and configure an Active Directory forest
 - Join a Windows client to the domain
@@ -29,22 +29,19 @@ The goal is to demonstrate foundational identity, authentication, and domain man
 
 ---
 
-## Step-by-Step Summary
+## Step-by-Step Walkthrough
 
 ---
 
-## 1) Create Azure Virtual Machines
+## 1) Environment Setup
 
-### Domain Controller (DC)
-- Image: Windows Server 2022 Datacenter
-- Size: Minimum 2 vcpus
-
-### Client Machine
-- Image: Windows 10 Pro
+- **Platform:** Microsoft Azure
+- **Domain Controller:** Windows Server (Azure VM)
+- **Client Machine** Windows 10 (Azure VM)
 - **Make sure that the DC and Client are on the same subnet**
 
 <p align="center">
-  <img width="1875" height="579" alt="drawing1 drawio" src="https://github.com/user-attachments/assets/bdb4940f-d0d3-4f76-8295-e72e90cfc1c8">
+  <img width="1875" height="579" alt="Drawing1 drawio (1)" src="https://github.com/user-attachments/assets/b8b5aca5-67de-41b0-8b77-e8abeff3c428" />
 </p>
 
 <p align="center">
@@ -99,9 +96,8 @@ The goal is to demonstrate foundational identity, authentication, and domain man
 5. Complete the installation
 
 <p align="center">
-  <img width="783" height="558" alt="Drawing6 drawio" src="https://github.com/user-attachments/assets/c9b654a1-ed65-4f29-b1fa-c34021be1262" />
+  <<img width="783" height="558" alt="Drawing6 drawio (1)" src="https://github.com/user-attachments/assets/501c6406-cc17-46e2-9f33-6abc957f1de4" />
 </p>
-
 
 ---
 
@@ -150,4 +146,24 @@ The goal is to demonstrate foundational identity, authentication, and domain man
 
 ---
 
+## Outcome
 
+- Deployed a Windows Server domain controller and a Windows client VM in Microsoft Azure  
+- Configured a static IP address for the domain controller to ensure consistent DNS and domain availability  
+- Established a functioning Active Directory Domain Services (AD DS) environment  
+- Promoted the server to a domain controller and created a new domain for the lab  
+- Joined the client VM to the domain and confirmed domain connectivity  
+- Verified that domain authentication and basic domain functionality were working as expected
+
+---
+
+## Skills Demonstrated
+
+- Deploying Azure Virtual Machines for server and client environments  
+- Configuring static IP addresses in Azure for reliable domain controller DNS resolution  
+- Connecting and configuring virtual machines within the same Azure virtual network  
+- Installing and managing Active Directory Domain Services (AD DS)  
+- Promoting a Windows Server to a domain controller and creating a new domain  
+- Joining Windows client machines to a domain  
+- Verifying domain functionality, including DNS, authentication, and domain connectivity  
+- Using Azure Portal and Windows Server administration tools to manage cloud-hosted infrastructure

@@ -59,7 +59,7 @@ This project documents the deployment of a functional **Active Directory environ
   <img width="1626" height="533" alt="Drawing3 drawio" src="https://github.com/user-attachments/assets/3d2ec7e6-8b41-4d2c-8082-577b8f82d426">
 </p>
 
-4. Select ipconfig1
+4. Select **ipconfig1**
 5. For Private IP address setting choose **Static**
 6. Save
 
@@ -102,7 +102,7 @@ This project documents the deployment of a functional **Active Directory environ
 
 ### 5) Promote Server to Domain Controller
 
-1. In **Server Manager**, click the notification flag
+1. In **Server Manager**, click the **notification flag**
 2. Select **Promote this server to a domain controller**
 
 <p align="center">

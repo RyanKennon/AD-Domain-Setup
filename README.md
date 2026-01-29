@@ -36,7 +36,7 @@ This project documents the deployment of a functional **Active Directory environ
 
 - **Platform:** Microsoft Azure
 - **Domain Controller:** Windows Server (Azure VM)
-- **Client Machine** Windows 10 (Azure VM)
+- **Client Machine:** Windows 10 (Azure VM)
 - **Make sure that the DC and Client are on the same subnet**
 
 <p align="center">

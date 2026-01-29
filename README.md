@@ -32,7 +32,7 @@ This project documents the deployment of a functional **Active Directory environ
 
 ---
 
-## 1) Environment Setup
+### 1) Environment Setup
 
 - **Platform:** Microsoft Azure
 - **Domain Controller:** Windows Server (Azure VM)
@@ -49,7 +49,7 @@ This project documents the deployment of a functional **Active Directory environ
 
 ---
 
-## 2) Make the DC's IP address Static
+### 2) Make the DC's IP address Static
 
 1. Select the **Domain Controller**
 2. Select **Network Settings**
@@ -69,7 +69,7 @@ This project documents the deployment of a functional **Active Directory environ
 
 ---
 
-## 3) Attach the Client VM to the DC
+### 3) Attach the Client VM to the DC
 
 1. Select **Client virtual machine**
 2. Select **Network Settings**
@@ -86,7 +86,7 @@ This project documents the deployment of a functional **Active Directory environ
 
 ---
 
-## 4) Install Active Directory Domain Services
+### 4) Install Active Directory Domain Services
 
 1. Log into the **Domain Controller**
 2. Open **Server Manager**
@@ -100,7 +100,7 @@ This project documents the deployment of a functional **Active Directory environ
 
 ---
 
-## 5) Promote Server to Domain Controller
+### 5) Promote Server to Domain Controller
 
 1. In **Server Manager**, click the notification flag
 2. Select **Promote this server to a domain controller**
@@ -123,7 +123,7 @@ This project documents the deployment of a functional **Active Directory environ
 
 ---
 
-## 6) Verify Domain Functionality
+### 6) Verify Domain Functionality
 
 1. Log into the Client Virtual Machine
 2. Open **Windows PowerShell**

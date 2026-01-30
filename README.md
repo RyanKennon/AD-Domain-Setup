@@ -36,8 +36,8 @@ This project documents the deployment of a functional **Active Directory environ
 ### 1) Environment Setup
 
 - **Platform:** Microsoft Azure
-- **Domain Controller:** Windows Server (Azure VM)
-- **Client Machine:** Windows 10 (Azure VM)
+- **Domain Controller:** Windows Server 2022 Datacenter (Azure VM)
+- **Client Machine:** Windows 10 Pro (Azure VM)
 - **Make sure that the DC and Client are on the same subnet**
 
 <p align="center">
@@ -84,6 +84,7 @@ This project documents the deployment of a functional **Active Directory environ
   <img width="1384" height="629" alt="Drawing5 drawio" src="https://github.com/user-attachments/assets/50e20109-3927-4b33-a3c9-eca327854bc1" />
 </p>
 
+8. Restart the client VM
 
 ---
 
@@ -120,7 +121,7 @@ This project documents the deployment of a functional **Active Directory environ
 
 
 5. Set the Directory Services Restore Mode (DSRM) password
-6. Complete the wizard and reboot the server
+6. Complete the install and reboot the VMM
 
 ---
 
@@ -172,7 +173,7 @@ This project documents the deployment of a functional **Active Directory environ
   <img width="1921" height="746" alt="Previous2 drawio (2)" src="https://github.com/user-attachments/assets/3a758583-b630-4971-839f-a02f0c974cab" />
 </p>
 
-3. Expand the **Domain** then click **Computer**
+3. Expand the **Domain** then click **Computers**
 4. The client VM should be inside
 
 <p align="center">

@@ -34,8 +34,8 @@ This project documents the deployment of a functional **Active Directory environ
 ### Lab Environment
 
 - **Platform:** Microsoft Azure
-- **Domain Controller:** Windows Server 2022 Datacenter (Azure VM)
-- **Client Machine:** Windows 10 Pro (Azure VM)
+- **Domain Controller:** Windows Server 2022 Datacenter
+- **Client Machine:** Windows 10 Pro
 - **Make sure that the DC and Client are on the same subnet**
 
 <p align="center">

@@ -134,7 +134,7 @@ This project documents the deployment of a functional **Active Directory environ
 </p>
 
 
-5. Enter the command **ipconfig /all** into Windows Powershell
+5. Enter the command **`ipconfig /all`** into Windows Powershell
 6. Confirm the output for the client's DNS settings shows the DC's private IP address
 
 <p align="center">
